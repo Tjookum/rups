@@ -570,8 +570,8 @@ void loop()
   {
     // digitalWrite(motor[i].motorA, !motor[i].motorDir);
     // digitalWrite(motor[i].motorB, motor[i].motorDir);
-    
-    motor[i].startVoltage = 127;
+
+    motor[i].startVoltage = 100;
     if (motor[i].revolutions > 0 && motor[i].revolutions < (maxRev /2)) {
       analogWrite(motor[i].motorA, motor[i].startVoltage + motor[i].revolutions);
       digitalWrite(motor[i].motorB, motor[i].motorDir);
